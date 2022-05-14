@@ -24,7 +24,7 @@ class Config(object):
 
 
     # ID of users that can use the bot commands
-    AUTH_USERS = [2737366, 7474747]
+    AUTH_USERS = ["2737366", "7474747"]
 
 
     # To save user details (Usefull for getting userinfo and total user counts)
