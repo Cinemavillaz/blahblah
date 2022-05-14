@@ -1,0 +1,14 @@
+name: Deploy
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: "cd87f12c-cb4c-4c95-aef7-e3eef646d42d"
+          heroku_app_name: "myonlyfilter"
+          heroku_email: "Filteruser@outlook.com"
